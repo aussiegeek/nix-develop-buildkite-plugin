@@ -3,4 +3,4 @@
 set -e
 set -o pipefail
 
-nix develop --command "${BUILDKITE_COMMAND}"
+nix develop --command ${BUILDKITE_COMMAND}

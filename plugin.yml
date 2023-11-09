@@ -1,0 +1,9 @@
+name: nix-develop
+description: Runs command with nix develop
+author: https://github.com/aussiegeek
+requirements: []
+configuration:
+  properties:
+    pattern:
+      type: string
+  additionalProperties: false

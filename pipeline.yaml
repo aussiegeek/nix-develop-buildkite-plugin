@@ -1,0 +1,13 @@
+steps:
+  # - label: "🐚 Lint"
+  #   plugins:
+  #     plugin-linter#v3.0.0:
+  #       id: aussiegeek/nix-develop
+
+  - label: ":nix:"
+    command: bats tests
+    env:
+      BUILDKITE_PLUGINS_ALWAYS_CLONE_FRESH: "true"
+    plugins:
+      aussiegeek/nix-develop#main:
+        id: aussiegeek/nix-develop
